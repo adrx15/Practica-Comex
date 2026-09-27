@@ -1,0 +1,29 @@
+{
+  "name": "cintac-comex-backend",
+  "version": "1.1.0",
+  "description": "API REST del cotizador de importaciones CINTAC con PostgreSQL",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "seed": "node scripts/seed.js",
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "db:migrate": "node-pg-migrate up",
+    "db:rollback": "node-pg-migrate down",
+    "db:status": "node-pg-migrate status"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^18.0.4",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.1",
+    "pg": "^8.23.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "node-pg-migrate": "^9.0.0"
+  }
+}

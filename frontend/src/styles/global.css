@@ -1,0 +1,38 @@
+/* Identidad corporativa Cintac — paleta naranjo / terracota */
+:root {
+  --naranjo: #e8590c;
+  --naranjo-oscuro: #d04a05;
+  --terracota: #c2410c;
+  --terracota-oscuro: #9a3412;
+  --gris-fondo: #f4f2f0;
+  --gris-borde: #ddd6d1;
+  --gris-texto: #44403c;
+  --blanco: #ffffff;
+  --verde: #15803d;
+  --rojo: #b91c1c;
+  --tipografia: 'Segoe UI', 'Arial', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--tipografia);
+  background: var(--gris-fondo);
+  color: var(--gris-texto);
+  min-height: 100vh;
+}
+
+button {
+  font-family: var(--tipografia);
+  cursor: pointer;
+}
+
+input,
+select {
+  font-family: var(--tipografia);
+  font-size: 15px;
+}
