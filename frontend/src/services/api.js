@@ -1,6 +1,6 @@
 // Cliente HTTP contra la API REST del backend
 const API_URL = (import.meta.env.VITE_API_URL || '').replace(/\/$/, '');
-const BASE = `${API_URL}/api/v1`;
+const BASE = `${API_URL}/api/v1`;cñ
 
 function token() {
   return localStorage.getItem('token');
